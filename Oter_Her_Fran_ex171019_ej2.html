@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Comparativa - OterHerFran</title>
+    </head>
+    <body>
+        <h1 id="titulo_Id" name="titulo" style="text-align: center;"> OterHerFran - Comparativa de coches </h1>
+        <br><br>
+
+        <ol id="lista1_Id" name="lista1">
+            <li> Skoda - OterHerFran - Supereb </li>
+            <li> Skoda - OterHerFran - Kodiaq </li>
+            <li> Renault - OterHerFran Zoe </li>
+            <li> Renault - OterHerFran - Espace </li>
+        </ol>
+        <br><br>
+
+        <video id="video1" width="300" height="200" autoplay="autoplay" controls loop="loop" style="display: block; margin: auto;"> 
+            <source src="./video/SkodaSuperb.mp4" type="video/mp4">
+            <source src="./video/SkodaSuperb.ogv" type="video/ogv">
+            <source src="./video/SkodaSuperb.webm" type="video/webm">
+        </video>
+        <br><br>
+
+        <table id="tabla1_Id" name="tabla1" style="border:1px solid black; text-align:center;">
+            <thead>
+                <tr>
+                    <th style="border:1px solid black; text-align:center;"> Modelos de coches </th>
+                    <th style="border:1px solid black; text-align:center;"> Skoda </th>
+                    <th style="border:1px solid black; text-align:center;"> Renault </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" style="border:1px solid black; text-align:center;">  </td>
+                    <td style="border:1px solid black; text-align:center;"> Supereb TDI 150CV<img src="./img/SkodaSuperb.jpg" alt="Supereb"> </td>
+                    <td style="border:1px solid black; text-align:center;"> Zoe Entry 88CV <img src="./img/RenaultZOE.jpg" alt=">Zoe"> </td>
+                   
+                </tr>
+                <tr>
+                    <td style="border:1px solid black; text-align:center;">Kodiaq 2.0 TDI 150CV <img src="./img/SkodaKodiaq.jpg" alt="Kodiaq"> </td>
+                    <td style="border:1px solid black; text-align:center;">Espace 1.6 DCI 130CV Life V6 <img src="./img/RenaultEspace.jpg" alt="Espace"> </td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+                <tr>
+                    <td colspan="3" style="border:1px solid black; text-align:center;"> Esto es el pie de la tabla: Datos tomados de autofacil.es</td>
+                </tr>
+        </table>
+        <br><br>
+        <form name="formu1" id="formu1_Id" action="" method=""> 
+            <fieldset>
+                <legend> Rellena los datos con tu modelo de coche favorito </legend>
+
+                <label for="marca"> Marca:</label><br>
+                <input type="text" name="marcaC" id="marca" placeholder="Introduce marca" required><br>
+
+                <label for="modelo"> Modelo: </label><br>
+                <input type="text" name="modeloC" id="modelo" placeholder="Introduce modelo" required><br>
+
+                <label for="CV"> CV: </label><br>
+                <input type="number" name="caballos" id="CV" placeholder="Introduce potencia" required><br>
+
+                <label for="color"> Color favorito para el coche: </label><br>
+                <input type="color" name="colorC" id="color" required><br>
+
+                <label for="identity"> Identificador de usurario: </label><br>
+                <input type="text" name="identity" id="iden_Id" maxlength="8" pattern="[A-Z]{2}[0-9]{4}[a-z]{1}" title="Debes introducir dos mayusculas, 4 numeros y una letra minuscula" required><br><br>
+
+                <input type="submit" value="Enviar mis Opiniones">
+            </fieldset>
+        </form>
+    </body>
+</html>
